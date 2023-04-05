@@ -25,7 +25,6 @@ public class Login {
 		
 		driver = Base.setUp();
 
-//		FileReader fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
 		FileReader fr = new FileReader(System.getProperty("user.dir")+"/src/test/resources/configfiles/config.properties");
 		Properties property = new Properties();
 		property.load(fr);

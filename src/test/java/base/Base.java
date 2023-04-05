@@ -21,10 +21,7 @@ public class Base {
 	public static WebDriver setUp() throws IOException {
 		
 		if(driver==null) {
-//			/Users/bhumidobariya/eclipse-workspace/castle_hill_example/src/test/resources/configfiles/config.properties
 			FileReader fr = new FileReader(System.getProperty("user.dir")+"/src/test/resources/configfiles/config.properties");
-//			FileReader fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
-			
 			Properties property = new Properties();
 			property.load(fr);
 			String browser = property.getProperty("browser");
